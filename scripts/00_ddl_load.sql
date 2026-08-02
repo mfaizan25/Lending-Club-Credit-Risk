@@ -1,10 +1,10 @@
 /* =====================================================================
-   Loads the cleaned Lending Club CSV (output of 00_clean_dataset.py) into
+   Loads the cleaned Lending Club CSV (output of scripts/00_trim_columns.py) into
    a staging table, then builds and populates a star schema:
    dim_grade, dim_borrower, dim_geography, fact_loan.
 
    PIPELINE STAGE: this runs AFTER the Python column-trim step
-   (00_clean_dataset.py) — input here is accepted_final.csv, already
+   (scripts/00_trim_columns.py) — input here is accepted_final.csv, already
    reduced to the 31 needed columns.
 
    NOTE: PLease Check the file path and adjust it according to your requirements
