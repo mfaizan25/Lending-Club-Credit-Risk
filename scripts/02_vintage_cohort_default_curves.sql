@@ -148,3 +148,26 @@ SELECT
     ) AS cumulative_default_rate_pct
 FROM age_summary
 ORDER BY cohort, loan_age_months;
+
+/* =====================================================================
+   FINDINGS (from query output, terminal/MOB-36 rates unless noted)
+ 
+   - Highest default rates are in the earliest vintages: 2007 Q4 (28.0%)
+     and 2008 Q1 (22.4%) are the worst-performing cohorts in the dataset.
+     2007 Q2/Q3 show even wider swings (12.5%, 21.1%) but on tiny cohorts
+     (n=24, n=190) — noise, not signal, don't lead with these.
+   - Rates fall sharply and bottom out around 2010-2011 vintages
+     (~10.5%-13.8%), the best-performing origination period on record.
+   - Rates climb steadily again from 2012 through 2016, reaching
+     16.5%-16.8% for 2015 Q1-2016 Q1 — approaching (but not matching)
+     the 2007-2008 peak. This is a ~6pp deterioration in credit quality
+     over that growth period, and the headline finding for this question.
+   - 2017-2018 vintages can't be judged on terminal rate yet — they're
+     still censored (capped at MOB 5-26 depending on quarter) because
+     the dataset's snapshot doesn't reach their full term. Comparing
+     them to fully-matured cohorts at the same age (not at MOB 36)
+     is the only fair comparison until more data ages in.
+   - Origination period clearly matters: default rate is not flat
+     across cohorts, and moves with macro/credit-cycle timing rather
+     than randomly — answers the "does it differ" half of the question.
+   ===================================================================== */
