@@ -14,8 +14,8 @@ regardless of file size.
 
 import csv
 
-INPUT_PATH = r"C:\Users\Your Path\accepted_2007_to_2018q4.csv\accepted_clean2.csv"
-OUTPUT_PATH = r"C:\Users\Your path\accepted_2007_to_2018q4.csv\accepted_final.csv"
+INPUT_PATH = r"C:\Users\Muhammad Faizan\accepted_2007_to_2018q4.csv\accepted_clean2.csv"
+OUTPUT_PATH = r"C:\Users\Muhammad Faizan\accepted_2007_to_2018q4.csv\accepted_final.csv"
 
 # The 31 columns needed downstream — everything else in the raw file
 # is dropped.
