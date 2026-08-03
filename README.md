@@ -145,6 +145,7 @@ financial services.
 
 ### Areas of Interest
 
+- Data Analysis
 - Credit Risk Analytics
 - Financial Data Analytics
 - FP&A (Financial Planning & Analysis)
