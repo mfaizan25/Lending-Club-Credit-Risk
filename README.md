@@ -1,10 +1,6 @@
-# 💳 Credit Risk Analysis — Lending Club SQL Portfolio
+# 💳 Lending Club Credit Risk Analysis
 
-A SQL-only credit risk analytics project on Lending Club's public loan
-dataset (2007–2018, ~2.26M loans), modeled as a star schema in SQL
-Server and analyzed through six business-driven deliverables.
-
----
+This portfolio project analyzes more than **2.26 million Lending Club loans (2007–2018)** using **SQL Server**. It demonstrates how a dimensional data warehouse and analytical SQL can be used to evaluate portfolio performance, identify credit risk trends, and support business decision-making.
 
 ## 🎯 Why This Project
 
@@ -12,8 +8,8 @@ Most public analyses of the Lending Club dataset stop at "train a
 classifier to predict default." That's a data science exercise, not a
 credit risk one.
 
-This project asks a different question: if you were the analyst
-inside a bank holding this loan portfolio, what would you actually
+This project asks a different question: if I would be the analyst
+inside a bank holding this loan portfolio, what would I actually
 need to report to leadership?
 
 Not "will this loan default" — but *is our pricing right, how much
@@ -46,9 +42,7 @@ it's the gap this project is built to close.
   joined to `dim_grade` (35 sub-grades), `dim_borrower` (2.26M, 1:1
   with loans), `dim_geography` (3,423 state/zip combinations)
 
-See [`pipeline_diagram`](./docs/pipeline_diagram.png) and
-[`schema_erd`](./docs/schema_erd.png) for the visual pipeline and
-data model.
+See the [Pipeline Diagram](./Docs/pipeline_diagram.png) and [Entity Relationship Diagram (ERD)](./Docs/schema_erd.png) for a visual overview of the data pipeline and warehouse design.
 
 ---
 
@@ -133,16 +127,39 @@ SQL Server · T-SQL (CTEs, recursive CTEs, window functions) · Python
 
 ---
 
-## 👤 Author
+---
 
-**Muhammad Faizan**
-BSc (Hons) Applied Management, BPP University London
-Targeting FP&A Analyst / Finance Data Analyst roles — Summer 2027
-internships
+## 👨‍💻 About the Author
 
-- 🔗 GitHub: [github.com/mfaizan25](https://github.com/mfaizan25)
-- 💼 LinkedIn: [linkedin.com/in/mfaizan25](https://www.linkedin.com/in/mfaizan25/)
-- 🧩 LeetCode: [leetcode.com/u/mfaizan252](https://leetcode.com/u/mfaizan252/)
+### Muhammad Faizan
 
-Feedback, corrections, or questions on the analysis are welcome —
-open an issue or reach out directly.
+I'm **Credit Risk Analyst** & **Financial Data Analyst**
+currently pursuing a **BSc (Hons) in Applied Management** at **BPP
+University London** (Graduation: **2028**).
+
+I enjoy building data-driven projects that combine **finance, SQL,
+data warehousing, and business analytics** to solve real-world
+business problems. My portfolio focuses on developing practical
+analytical solutions that mirror the work performed in banking and
+financial services.
+
+### Areas of Interest
+
+- Credit Risk Analytics
+- Financial Data Analytics
+- FP&A (Financial Planning & Analysis)
+- Banking Analytics
+- Business Intelligence
+- SQL & Data Warehousing
+
+### Connect with Me
+
+- **GitHub:** [github.com/mfaizan25](https://github.com/mfaizan25)
+- **LinkedIn:** [linkedin.com/in/mfaizan25](https://www.linkedin.com/in/mfaizan25/)
+- **LeetCode:** [leetcode.com/u/mfaizan252](https://leetcode.com/u/mfaizan252/)
+
+If you have feedback, suggestions, or would like to discuss data
+analytics, finance, or potential opportunities, feel free to connect
+with me.
+
+---
